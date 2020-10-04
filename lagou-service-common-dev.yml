@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///lagou_sca_homework?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2b8
+    username: root
+    password: root
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  mail:
+    host: smtp.qq.com
+    username: lyloou@qq.com
+    # 指的是授权码不是登录密码（https://blog.csdn.net/qq_39241443/article/details/81293939）
+    password: hkycgjjsbusagcea
+    default-encoding: utf-8
+  rabbitmq:
+    host: 8.129.173.10
+    port: 5672
+    username: root
+    password: root001
+    connection-timeout: 15000
+    virtual-host: vhost
+    
+# IP防暴刷指标参数（X分钟的X，Y上限的Y）
+ip:
+  limit:
+    x: 1
+    y: 3
