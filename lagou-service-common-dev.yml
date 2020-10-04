@@ -23,9 +23,9 @@ spring:
     password: root001
     connection-timeout: 15000
     virtual-host: vhost
-    
+
 # IP防暴刷指标参数（X分钟的X，Y上限的Y）
 ip:
   limit:
     x: 1
-    y: 3
+    y: 100
