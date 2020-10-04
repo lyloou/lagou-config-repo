@@ -28,4 +28,4 @@ spring:
 ip:
   limit:
     x: 1
-    y: 3
+    y: 4
